@@ -1,0 +1,262 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    color: #252222;
+    line-height: 1.6;
+}
+
+header {
+    background-color: #edf3ed;
+    color: rgb(8, 8, 8);
+    padding: 1rem;
+    text-align: left;
+}
+
+p {
+    margin: 16px 0;
+    background-color: #dfefff;
+    padding: 14px 16px;
+    border-radius: 8px;
+}
+
+h1 {
+    margin: 10px 0;
+    color: #000000;
+}
+
+h2,
+h3 {
+    margin: 10px 0;
+    color: #69a51a;
+}
+
+nav {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #d9f2d0;
+    overflow: hidden;
+    padding: 1rem 2rem;
+}
+
+.logo {
+    width: 250px;
+    height: 250px;
+    border-radius: 100%;
+    object-fit: scale-down;
+    display: block;
+    margin: 0 auto;
+}
+
+nav ul {
+    display: flex;
+    list-style: none;
+    margin: 10px 0 0 0;
+    padding: 0;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+nav ul li a {
+    display: inline-block;
+    margin: 0 15px;
+    color: rgb(3, 3, 3);
+    text-decoration: none;
+    transition: color 0.2s ease, background-color 0.2s ease;
+    padding: 8px 10px;
+    border-radius: 5px;
+}
+
+nav ul li a:hover,
+nav ul li a:active,
+nav ul li a:focus,
+nav ul li a.active {
+    color: #ffffff;
+    background-color: #2e8b57;
+}
+
+#Skills .skills-list {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(110px, 1fr));
+    gap: 12px;
+    padding: 0;
+    list-style: none;
+}
+
+#Skills .skills-list li {
+    display: flex;
+    min-height: 100px;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+    padding: 12px;
+    border-radius: 6px;
+    background-color: #ffffff;
+}
+
+#Skills .skills-list img {
+    width: 48px;
+    height: 48px;
+}
+
+#projects .project-gallery {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: flex-start;
+    gap: 16px;
+    padding: 0;
+    list-style: none;
+}
+
+#projects .project-gallery li {
+    flex: 0 1 220px;
+    max-width: 220px;
+}
+
+#projects .project-card {
+    display: grid;
+    width: 100%;
+    gap: 8px;
+    cursor: pointer;
+    padding: 0;
+    border: 0;
+    background: transparent;
+    color: inherit;
+    text-align: left;
+    font: inherit;
+}
+
+#projects .project-card:focus-visible {
+    outline: 2px solid #2e8b57;
+    outline-offset: 3px;
+}
+
+#projects .project-card-prompt {
+    color: #2e8b57;
+}
+
+#projects .project-gallery img {
+    display: block;
+    width: 100%;
+    height: 160px;
+    object-fit: cover;
+    border-radius: 8px;
+}
+
+#projects .project-dialog {
+    width: min(90vw, 600px);
+    max-height: 85vh;
+    margin: auto;
+    padding: 22px;
+    overflow-y: auto;
+    border: 0;
+    border-radius: 8px;
+    background: #ffffff;
+    color: #252222;
+}
+
+#projects .project-dialog::backdrop {
+    background: rgb(0 0 0 / 55%);
+}
+
+#projects .project-dialog-heading {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 16px;
+}
+
+#projects .project-dialog-close {
+    padding: 6px 10px;
+    border: 1px solid #2e8b57;
+    border-radius: 6px;
+    background: #ffffff;
+    color: #252222;
+    cursor: pointer;
+    font: inherit;
+}
+
+#projects .project-dialog-image {
+    display: block;
+    width: 100%;
+    max-height: 320px;
+    margin: 12px 0;
+    border-radius: 6px;
+    object-fit: contain;
+}
+
+#projects .project-dialog a {
+    color: #2e8b57;
+}
+
+#services .service-list {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    gap: 16px;
+    padding: 0;
+    list-style: none;
+}
+
+#services .service-list li {
+    padding: 16px;
+    border-radius: 6px;
+    background-color: #d9f2d0;
+}
+
+#services .service-list img {
+    display: block;
+    width: 100%;
+    height: 160px;
+    margin-bottom: 12px;
+    border-radius: 4px;
+    object-fit: cover;
+}
+
+#services .service-list p {
+    margin-bottom: 0;
+}
+
+.contact-left {
+    text-align: left;
+}
+
+.contact-left ul {
+    list-style: none;
+    padding-left: 0;
+    text-align: left;
+}
+
+.contact-left li {
+    margin: 8px 0;
+    color: #2e8b57;
+}
+
+.contact-details li {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.contact-details img {
+    width: 26px;
+    height: 26px;
+    flex: 0 0 26px;
+    object-fit: contain;
+}
+
+.contact-details a {
+    color: inherit;
+    text-decoration: none;
+}
+
+.contact-details a:hover,
+.contact-details a:focus-visible {
+    text-decoration: underline;
+}
