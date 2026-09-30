@@ -24,7 +24,7 @@
         </nav>
     </header>
 
-    <main>
+   <main>
         <div class="hero">
             <h3>HELLO I'M WISELY MOKUA</h3>
             <p>An aspiring web developer with a passion for creating beautiful and functional websites.</p>
@@ -51,7 +51,7 @@
                 </ul>
             </div>
 
-        </div>
+ </div>
         <div id="projects">
             <div class="container">
                 <h2>Projects</h2>
